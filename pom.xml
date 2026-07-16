@@ -5,30 +5,35 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.lideratec</groupId>
-    <artifactId>prueba</artifactId>
+    <artifactId>semana15A</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>24</maven.compiler.source>
-        <maven.compiler.target>24</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
 
-        <!-- Implementación de Jakarta Persistence -->
+        <!-- API de Jakarta Persistence -->
+        <dependency>
+            <groupId>jakarta.persistence</groupId>
+            <artifactId>jakarta.persistence-api</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+
+        <!-- Implementación JPA: Hibernate -->
         <dependency>
             <groupId>org.hibernate.orm</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>7.4.5.Final</version>
+            <version>6.4.4.Final</version>
         </dependency>
 
-        <!-- Driver para conectar Java con MySQL -->
+        <!-- Driver MySQL -->
         <dependency>
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
             <version>9.7.0</version>
         </dependency>
-
     </dependencies>
-
 </project>
